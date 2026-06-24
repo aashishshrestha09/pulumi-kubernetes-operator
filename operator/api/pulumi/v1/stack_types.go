@@ -99,6 +99,9 @@ const (
 	StalledPulumiVersionTooLowReason = "PulumiVersionTooLow"
 	// Stalled because the workspace failed to initialize or install dependencies.
 	StalledWorkspaceFailedReason = "WorkspaceFailed"
+	// Stalled because the Stack's namespace is terminating, so a workspace cannot be
+	// created to run destroy. Resources must be cleaned up manually.
+	StalledNamespaceTerminatingReason = "NamespaceTerminating"
 
 	// Ready because processing has completed
 	ReadyCompletedReason = "ProcessingCompleted"
